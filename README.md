@@ -8,5 +8,5 @@ Android Application for practicing the popular word game Scrabble
 | UX Designer | Kyle Ryan |
 | Front-end Developer | Kyle Ryan |
 | Back-end Developer | Kyle Ryan, Travis Marceau, and Menglin Yu |
-| Tester | Menglin Yu, Travis Marceau, Zhiqiang Zhang and Kyle Ryan |
+| Tester | Menglin Yu, Travis Marceau, Zhiqiang Zhang, and Kyle Ryan |
 | Documentation | Zhiqiang Zhang and Menglin Yu |
