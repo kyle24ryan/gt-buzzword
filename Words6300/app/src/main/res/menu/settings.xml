@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="Main Menu">
+    </item>
+    <item
+        android:id="@+id/action_play"
+        android:title="Play Game">
+    </item>
+    <item
+        android:id="@+id/action_stats"
+        android:title="Statistics">
+    </item>
+    <item
+        android:id="@+id/action_manual"
+        android:title="Manual">
+    </item>
+</menu>

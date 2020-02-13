@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:gravity="center">
+  <TextView
+    android:id="@+id/tile_letter"
+    android:layout_height="90dp"
+    android:layout_width="90dp"
+    android:textSize="70sp"
+    android:paddingStart="22dp"
+    android:paddingEnd="0dp"
+    android:paddingTop="20dp"
+    android:text="D"
+    android:textAlignment="gravity"
+    android:background="@drawable/tile_border"
+    android:textColor="@color/colorPrimaryDark" />
+  <TextView
+    android:id="@+id/tile_value"
+    android:layout_height="90dp"
+    android:layout_width="90dp"
+    android:layout_alignStart="@+id/tile_letter"
+    android:layout_alignTop="@+id/tile_letter"
+    android:paddingStart="62dp"
+    android:paddingEnd="0dp"
+    android:paddingTop="60dp"
+    android:textColor="@color/colorPrimaryDark" />
+</RelativeLayout>

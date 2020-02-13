@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/dialog_max_turns_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Adjust Maximum Turns"/>
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/dialog_max_turns_picker"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dialog_max_turns_title"
+        android:gravity="center_horizontal"
+        android:background="@drawable/max_turns_picker"
+        app:snp_buttonIconLeft="@drawable/ic_left"
+        app:snp_buttonIconRight="@drawable/ic_right"
+        app:snp_maxValue="100"
+        app:snp_minValue="1"
+        app:snp_value="10"
+        app:snp_stepSize="1"
+        app:snp_orientation="horizontal"
+        app:snp_value_text_appearance="@color/colorPrimaryDark"
+        app:snp_value_text_size="18sp"
+        app:snp_valueMarginStart="8dp"
+        app:snp_valueMarginEnd="8dp"/>
+</RelativeLayout>

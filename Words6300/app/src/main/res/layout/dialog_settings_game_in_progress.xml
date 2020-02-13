@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/dialog_start_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Start New Game?"/>
+    <TextView
+        android:id="@+id/dialog_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_start_new"
+        android:layout_margin="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Settings cannot be changed for a game in progress. To change settings start a new game."/>
+</RelativeLayout>

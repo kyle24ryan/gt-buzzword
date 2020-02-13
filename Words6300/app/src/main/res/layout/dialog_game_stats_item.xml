@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/dialogMaxTurns"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/dialog_max_turns"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/dialog_gridview_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogMaxTurns"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@id/dialogMaxTurns"
+        android:layout_alignEnd="@+id/dialogMaxTurns"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Distribution and Values:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+        <GridView
+            android:id="@+id/game_stats_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="5">
+        </GridView>
+    </LinearLayout>
+</RelativeLayout>

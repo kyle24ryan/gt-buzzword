@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TableRow
+        android:id="@+id/game_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/turns_taken"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/turns"
+            android:textSize="12sp"
+            android:textColor="@color/colorSecondary"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/turns_max"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/max"
+            android:textSize="12sp"
+            android:textColor="@color/colorSecondary"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/score"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondary"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tiles_played"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/tiles_played"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondary" />
+        <TextView
+            android:id="@+id/tiles_left"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/tiles_left"
+            android:textSize="12sp"
+            android:textColor="@color/colorSecondary"
+            android:textAlignment="center" />
+    </TableRow>
+
+    <RelativeLayout
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/game_stats">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/tvEmptyBoard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="Board is Empty!"
+            android:textAlignment="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/board"
+        android:layout_above="@+id/rack"
+        android:background="@color/colorPrimary">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/dropzone">
+        </View>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:minHeight="80dp"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tvEmptyWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorSecondary"
+            android:text="Drag Tiles Here"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            android:textAllCaps="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rack"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/button_group">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/tvEmptyRack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="Rack is Empty!"
+            android:textAlignment="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:baselineAligned="false">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="2.5dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark" >
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textAlignment="center"
+                android:text="RESET TILES"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:onClick="onResetClick"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark" >
+            <Button
+                android:id="@+id/swap_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textAlignment="center"
+                android:text="SWAP TILES"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:onClick="onSwapClick"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="2.5dp"
+            android:background="@color/colorPrimaryDark" >
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textAlignment="center"
+                android:text="PLAY WORD"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:onClick="onPlayWordClick"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
+

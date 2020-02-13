@@ -1,0 +1,26 @@
+<resources>
+  <string name="app_name">BuzzWord</string>
+  <string name="logo">Logo</string>
+  <string name="play_game">Play Game</string>
+  <string name="statistics">Statistics</string>
+  <string name="settings">Settings</string>
+  <string name="fa_question"></string>
+  <string name="fa_play_circle">&#xf04b;</string>
+  <string name="rules_title">BUZZWORD\nRULES</string>
+  <string name="listview_letter">%1s</string>
+  <string name="listview_distribution">x%1$s</string>
+  <string name="listview_value">%1s</string>
+  <string name="tiles_played">Tiles Played\n%1$d</string>
+  <string name="tiles_left">Tiles Left\n%1$d</string>
+  <string name="score">Score\n%1$d</string>
+  <string name="turns">Turns Taken\n%1$d</string>
+  <string name="end_game_score">Final Score: %1$d</string>
+  <string name="end_game_turns">Number of Turns: %1$d</string>
+  <string name="end_game_avg">Average Per Turn: %1$.1f</string>
+  <string name="max">Max Turns\n%1$d</string>
+  <string name="dialog_max_turns">Maximum Turns: %1$d</string>
+  <string name="usage_percent">%.1f%%</string>
+  <string name="avg_score">%.1f</string>
+  <string name="played_word_toast">Played %1$s for %2$d Points</string>
+  <string name="swapped_toast">Swapped %1$d Tiles (%2$s)</string>
+</resources>

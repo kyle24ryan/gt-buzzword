@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".menu.MainActivity"
+  android:background="@color/colorAccent">
+
+  <ImageView
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:src="@drawable/logo"
+    android:layout_centerInParent="true"
+    android:layout_marginStart="80dp"
+    android:contentDescription="@string/logo" />
+
+  <Button
+    android:id="@+id/play_game_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/logo"
+    android:layout_alignEnd="@+id/logo"
+    android:layout_centerInParent="true"
+    android:text="@string/play_game"
+    android:textSize="20sp"
+    android:layout_below="@+id/logo"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/colorAccent"
+    android:background="@drawable/rounded_btn"
+    android:onClick="playGame"/>
+
+  <TableRow
+      android:layout_marginTop="5dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignStart="@id/play_game_button"
+      android:layout_alignEnd="@id/play_game_button"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/play_game_button">
+    <Button
+      android:id="@+id/settings_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/settings"
+      android:layout_marginEnd="2.5dp"
+      android:textColor="@color/colorAccent"
+      android:textSize="16sp"
+      android:background="@drawable/rounded_btn"
+      android:onClick="changeSettings"/>
+    <Button
+        android:id="@+id/stats_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/statistics"
+        android:layout_marginStart="2.5dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_btn"
+        android:onClick="viewStats"/>
+  </TableRow>
+  <TextView
+    android:id="@+id/instructions_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="10dp"
+    android:text="@string/fa_question"
+    android:textSize="35sp"
+    android:onClick="viewInstructions"
+    android:textColor="@color/colorPrimaryDark"/>
+
+</android.widget.RelativeLayout>

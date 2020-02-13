@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/frame_layout_item">
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:id="@+id/scalableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scale_base_width="100"
+        app:scale_base_height="100">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:scale_width="80"
+            app:scale_top="23"
+            app:scale_left="8"
+            app:scale_textsize="80"
+            tools:text="A" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:scale_width="100"
+            app:scale_top="61"
+            app:scale_left="-17"
+            app:scale_textsize="18" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</FrameLayout>
