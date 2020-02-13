@@ -6,6 +6,7 @@ Android Application for practicing the popular word game Scrabble
 | ------------- | ------------- |
 | Project Manager | Menglin Yu, Travis Marceau, Zhiqiang Zhang and Kyle Ryan take turns for each delivery|
 | UX Designer | Kyle Ryan |
-| Front-end Developer | Kyle Ryan and Menglin Yu |
-| Back-end Developer | Kyle Ryan, Travis Marceau, and Zhiqiang Zhang |
+| Front-end Developer | Kyle Ryan |
+| Back-end Developer | Kyle Ryan, Travis Marceau, and Menglin Yu |
 | Tester | Menglin Yu, Travis Marceau, Zhiqiang Zhang and Kyle Ryan |
+| Documentation | Zhiqiang Zhang and Menglin Yu |
